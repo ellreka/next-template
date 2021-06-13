@@ -1,13 +1,11 @@
-import { NextPage } from 'next'
-import React from 'react'
-import Layout from '../components/Layout'
+import { ReactElement } from 'react'
 
-const Home: NextPage = () => {
+import { Header } from '~components/Header'
+
+export default function Index(): ReactElement {
   return (
-    <Layout>
-      <div className="text-red-900">uuuuu</div>
-    </Layout>
+    <div>
+      <Header foo="aaa" />
+    </div>
   )
 }
-
-export default Home

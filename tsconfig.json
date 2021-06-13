@@ -1,21 +1,35 @@
 {
   "compilerOptions": {
-    "strict": true,
-    "target": "ES6",
-    "module": "esnext",
-    "lib": ["es2019", "dom"],
-    "esModuleInterop": true,
-    "noImplicitAny": true,
-    "moduleResolution": "node",
-    "jsx": "preserve",
-    "forceConsistentCasingInFileNames": true,
-    "sourceMap": true,
+    "baseUrl": ".",
+    "paths": {
+      "~atoms/*": ["src/atoms/*"],
+      "~components/*": ["src/components/*"],
+      "~hooks/*": ["src/hooks/*"],
+      "~utils/*": ["src/utils/*"]
+    },
+    "target": "es5",
+    "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
     "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
     "resolveJsonModule": true,
-    "isolatedModules": true
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "strictNullChecks": true,
+    "noErrorTruncation": true
   },
-  "exclude": ["node_modules"],
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"]
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "*.js",
+    ".*.js",
+    "**/*.*.js"
+  ],
+  "exclude": ["node_modules"]
 }

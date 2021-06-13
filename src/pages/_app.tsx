@@ -1,8 +1,14 @@
-import '../styles/index.css'
+import '../styles/style.css'
+
 import { AppProps } from 'next/app'
+import { ReactElement } from 'react'
 
-const App = ({ Component, pageProps }: AppProps) => {
-  return <Component {...pageProps} />
+import { Layout } from '~components/Layout'
+
+export default function App({ Component, pageProps }: AppProps): ReactElement {
+  return (
+    <Layout>
+      <Component {...pageProps} />
+    </Layout>
+  )
 }
-
-export default App
