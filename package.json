@@ -13,8 +13,8 @@
     "gen:comp": "hygen component new --type components --name"
   },
   "devDependencies": {
-    "@commitlint/cli": "^12.1.4",
-    "@commitlint/config-conventional": "^12.1.4",
+    "@commitlint/cli": "12.1.4",
+    "@commitlint/config-conventional": "12.1.4",
     "@storybook/addon-a11y": "^6.2.9",
     "@storybook/addon-essentials": "^6.3.0-beta.10",
     "@storybook/addon-postcss": "^2.0.0",
